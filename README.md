@@ -57,7 +57,7 @@ Una vez compilado, ejecutar el programa con el siguiente comando: ./test o make 
 
 Contribuciones.
 
-Eugenia Ramirez
-Maeva Puente
-Gregory Hernandez
-Jose Leonel Rivas
+Eugenia Ramirez.
+Maeva Puente.
+Gregory Hernandez.
+Jose Leonel Rivas.
