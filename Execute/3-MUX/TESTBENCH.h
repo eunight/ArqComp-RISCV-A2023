@@ -9,7 +9,7 @@ class TestBench : public sc_module {
     
 	sc_in<bool> clkIn;
 	sc_in<sc_int<32>> Op_In;
-	sc_out<sc_int<32>> Op1_Out, Op2_Out, Op3_Out;
+	sc_out<sc_int<32>> Op1_Out, Op2_Out;
 	sc_out<bool> aOut, bOut;
 
   	SC_CTOR(TestBench);
