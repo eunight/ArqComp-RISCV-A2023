@@ -23,18 +23,6 @@ void AluControl :: process()
     rs2_registerOut.write(rs2_registerIn.read());
     target_registerOut.write(target_registerIn.read());
 
-    if(HazardIn.read() == 0){
-        Mem_MemWriteOut.write(0);
-        Mem_MemReadOut.write(0);
-        Wb_MemtoRegOut.write(0);
-        Wb_RegWriteOut.write(0);
-    }else {
-
-        Mem_MemWriteOut.write(Mem_MemWriteIn.read());
-        Mem_MemReadOut.write(Mem_MemReadIn.read());
-        Wb_MemtoRegOut.write(Wb_MemtoRegIn.read());
-        Wb_RegWriteOut.write(Wb_RegWriteIn.read());
-    }
 
 
 }
