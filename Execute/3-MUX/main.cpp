@@ -15,13 +15,13 @@ int sc_main(int argv, char* argc[]) {
   TestBench TestBench("TestBench");
 
  
-  sc_signal<sc_int<32>> Op1_Sg, Op2_Sg, Op3_Sg, OpSg;
+  sc_signal<sc_int<32>> Op1_Sg, Op2_Sg, OpSg;
   sc_signal<bool> aSg, bSg;
 
  
   Mux.Op1_In(Op1_Sg);
   Mux.Op2_In(Op2_Sg);
-  Mux.Op3_In(Op_3Sg);
+
   Mux.aIn(aSg);
   Mux.bIn(bSg);
   Mux.Op_Out(OpSg);
@@ -29,7 +29,6 @@ int sc_main(int argv, char* argc[]) {
   TestBench.Op_In(OpSg);
   TestBench.Op1_Out(Op1_Sg);
   TestBench.Op2_Out(Op2_Sg);
-  TestBench.Op3_Out(Op3_Sg);
   TestBench.aOut(aSg);
   TestBench.bOut(bSg);
 
