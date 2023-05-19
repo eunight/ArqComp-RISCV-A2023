@@ -39,11 +39,7 @@ cout << "-----------------------------------------------------------------------
     rs1_registerOut.write(0);
     rs2_registerOut.write(1);
     target_registerOut.write(0);
-    HazardOut.write(1);
-    Mem_MemWriteOut.write(0);
-    Mem_MemReadOut.write(0);
-    Wb_MemtoRegOut.write(1);
-    Wb_RegWriteOut.write(1);
+    target_registerOut.write(0); 
     wait();
     wait();
     print();
@@ -54,11 +50,7 @@ cout << "-----------------------------------------------------------------------
     rs1_registerOut.write(0);
     rs2_registerOut.write(1);
     target_registerOut.write(0);
-    HazardOut.write(0);
-    Mem_MemWriteOut.write(0);
-    Mem_MemReadOut.write(0);
-    Wb_MemtoRegOut.write(1);
-    Wb_RegWriteOut.write(1);
+
     Ex_ALUOut.write(1515415);
     wait();
     wait();
