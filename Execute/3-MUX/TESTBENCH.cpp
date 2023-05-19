@@ -12,7 +12,6 @@ void TestBench :: print() {
  cout << sc_time_stamp() << "        ";
  cout << Op1_Out.read() << "        ";
  cout << Op2_Out.read() << "        ";
- cout << Op3_Out.read() << "        ";
  cout << aOut.read() << "        ";
  cout << bOut.read() << "        ";
  cout << Op_In.read() << "\n";
@@ -20,12 +19,12 @@ void TestBench :: print() {
 
 
 void TestBench :: test() {
-  cout << "Time   Op1_In   Op2_In   Op3_In   aIn   bIn   Op_Out\n";
-  cout << "-------------------------------------------------------\n";
+  cout << "Time   Op1_In   Op2_In  aIn   bIn   Op_Out\n";
+  cout << "------------------------------------------------\n";
 
     Op1_Out.write(1);
     Op2_Out.write(2);
-    Op3_Out.write(3);
+
 
     aOut.write(false);
     bOut.write(false);
